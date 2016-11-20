@@ -146,7 +146,7 @@ div {
 }
 #top {
   top: 5px;
-  right: 5px;
+  right: 10px;
   position: fixed;
   font-size: 1.5vw;
 }
@@ -204,7 +204,7 @@ i {
 }
 
 .parallax-three {
-  background-image: url("../img/space_cat.jpg");
+  background-image: url("../img/forest.jpeg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
