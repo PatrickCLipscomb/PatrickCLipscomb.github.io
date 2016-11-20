@@ -8,35 +8,6 @@ body, html {
 
 }
 
-
-h1 {
-    font-family: monospace;
-    font-size: 3em;
-    margin-bottom: 0;
-}
-
-h2 {
-  margin-top: 5%;
-  margin-bottom: 0;
-}
-
-h3 {
-  margin-top: 1%;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-p {
-  color: black;
-}
-
-div {
-  box-shadow: 0 0 15px 15px white inset;
-}
-
 .front-page {
   height: 100%;
   background-image: url("../img/pre-header-path.jpg");
@@ -71,7 +42,33 @@ div {
   background-size: cover;
 }
 
+h1 {
+    font-family: monospace;
+    font-size: 3em;
+    margin-bottom: 0;
+}
 
+h2 {
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+div {
+  box-shadow: 0 0 15px 15px white inset;
+}
 
 .general-work {
   background-image: url("../img/portland.jpg");
