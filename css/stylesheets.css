@@ -9,11 +9,7 @@ body, html {
 }
 
 .front-page {
-  height: 100%;
   background-image: url("../img/pre-header-path.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #pre-header {
@@ -27,37 +23,42 @@ body, html {
   padding: 50px;
   border-radius: 7px;
   background-image: url("../img/vintage-background.jpg");
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.pre-parallax {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 10px 10px 5px #888888;
 }
 
 .img-one {
   background-image: url("../img/pat-social1.jpg");
   max-width: 100%;
+  background-repeat: no-repeat;
 }
 
 .img-two {
   background-image: url("../img/pat-tennis1.jpg");
   max-width: 100%;
+  background-repeat: no-repeat;
 }
 
 .img-three {
   background-image: url("../img/forest.jpeg");
   max-width: 100%;
+  background-repeat: no-repeat;
 }
 
 .parallax {
   height: 100%;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .mini-pic {
-  max-width: 15%;
+  max-width: 10%;
 }
 
 
@@ -189,7 +190,7 @@ div {
   min-height: 374px;
 }
 
-.work-his {
+#work-his {
   display: block;
   margin-left: auto;
   margin-right: auto;

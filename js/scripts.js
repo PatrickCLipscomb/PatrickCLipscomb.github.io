@@ -3,5 +3,6 @@ $(document).ready(function() {
   if (isiOS){
     $('div').removeClass('parallax').addClass('control');
     $('img').addClass('mini-pic');
+    $('pre').removeClass('pre-parallax');
   }
 })
