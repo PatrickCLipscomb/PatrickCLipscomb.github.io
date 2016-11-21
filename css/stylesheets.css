@@ -35,15 +35,17 @@ body, html {
 
 .img-one {
   background-image: url("../img/pat-social1.jpg");
+  max-width: 100%;
 }
 
 .img-two {
   background-image: url("../img/pat-tennis1.jpg");
+  max-width: 100%;
 }
 
 .img-three {
   background-image: url("../img/forest.jpeg");
-
+  max-width: 100%;
 }
 
 .parallax {
@@ -55,8 +57,9 @@ body, html {
 }
 
 .mini-pic {
-  max-width: 100%;
+  max-width: 15%;
 }
+
 
 .proj-sub-head {
   padding-right: 10px;
