@@ -15,4 +15,20 @@ $(document).ready(function() {
       $('#prof-pic').addClass('classy')
     }
   })
+  var lastScrollTop = 0;
+  $(window).scroll(function(event) {
+     var scroll = $(this).scrollTop();
+     if (scroll > lastScrollTop){
+       if ($('#navigation').hasClass('fly-up')) {
+         $('#navigation').removeClass('fly-up')
+         $('#navigation').addClass('fly-down')
+       }
+     } else {
+       if ($('#navigation').hasClass('fly-down')) {
+         $('#navigation').removeClass('fly-down')
+         $('#navigation').addClass('fly-up')
+       }
+     }
+     lastScrollTop = scroll;
+  });
 })

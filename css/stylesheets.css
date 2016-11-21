@@ -113,7 +113,6 @@ div {
   bottom: 30px;
   right: 1%;
   box-shadow: 10px 10px 5px #888888;
-  background-image: url("../img/falcon.jpg");
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;
@@ -122,6 +121,14 @@ div {
   padding-bottom: 30px;
   border-radius: 7px;
   z-index: 1;
+}
+
+.fly-down {
+  background-image: url("../img/falcon.jpg");
+}
+
+.fly-up {
+  background-image: url("../img/falconUp.jpg");
 }
 
 .nav-text {
