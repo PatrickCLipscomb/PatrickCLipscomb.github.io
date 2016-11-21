@@ -4,5 +4,6 @@ $(document).ready(function() {
     $('div').removeClass('parallax').addClass('control');
     $('img').addClass('mini-pic');
     $('pre').removeClass('pre-parallax');
+    $('#work-his').removeClass('mini-pic');
   }
 })
