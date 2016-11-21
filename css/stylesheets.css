@@ -33,13 +33,29 @@ body, html {
   box-shadow: 10px 10px 5px #888888;
 }
 
-.parallax {
+.img-one {
   background-image: url("../img/pat-social1.jpg");
+}
+
+.img-two {
+  background-image: url("../img/pat-tennis1.jpg");
+}
+
+.img-three {
+  background-image: url("../img/forest.jpeg");
+
+}
+
+.parallax {
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.mini-pic {
+  max-width: 100%;
 }
 
 .proj-sub-head {
@@ -170,15 +186,6 @@ div {
   min-height: 374px;
 }
 
-.parallax-two {
-  background-image: url("../img/pat-tennis1.jpg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .work-his {
   display: block;
   margin-left: auto;
@@ -201,15 +208,6 @@ i {
 
 .project-images:hover, .current-image:hover {
   cursor: pointer;
-}
-
-.parallax-three {
-  background-image: url("../img/forest.jpeg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .app-links {
