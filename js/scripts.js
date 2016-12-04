@@ -36,7 +36,7 @@ $(document).ready(function() {
     var id = idName.charAt(idName.length - 1)
     var name = idName.slice(0, -2)
     $('#' + idName).on("click", function() {
-      $('#' + name + '-display').html('<br><button id="close-' + name +'" class="pull-right btn btn-danger glyphicon glyphicon-remove"></button><img src="img/' + name + id + '.png" class="display-shot" />')
+      $('#' + name + '-display').html('<br><button id="close-' + name +'" class="pull-right btn btn-danger glyphicon glyphicon-remove"></button><img src="img/' + name + id + '.png" class="display-shot" /><br>')
       $('#close-' + name).on('click', function() {
         if (name === 'local') {
           $('#' + name + '-display').html('');
