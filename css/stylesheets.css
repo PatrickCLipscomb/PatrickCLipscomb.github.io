@@ -170,6 +170,20 @@ div {
   justify-content: space-between;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  display: flex;
+  border: 2px black solid;
+  border-radius: 2px;
+  align-items: center;
+  max-width: 20%;
+  padding: 4px;
+}
+
 #prof-pic {
   max-width: 200px;
   margin-left: 50px;
@@ -263,4 +277,14 @@ i {
 
 .contact-icon {
   width: 2.5%;
+}
+
+.contact-icon-about {
+  width: 15%;
+  margin-top: 5%;
+  display: inline;
+}
+
+.about-icons {
+  margin-left: 33%;
 }
