@@ -90,7 +90,7 @@ $(document).ready(function() {
 })
 var imgSwap;
 function beginInterval(projectName) {
- imgSwap = window.setInterval( function() {swapImg(projectName)}, 2000);
+ imgSwap = window.setInterval( function() {swapImg(projectName)}, 1500);
 }
 function intervalClear() {
   window.clearInterval(imgSwap);
