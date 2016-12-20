@@ -15,11 +15,24 @@ $(document).ready(function() {
     speed: 110,
     autoStart: true
   });
+  $('#type-text2').typeIt({
+    strings: 'searching for a challenging and fast-paced work environment.',
+    speed: 70,
+    autoStart: true
+  });
+  $('#fader').delay(4000).fadeIn(3000);
+  $('.fading').delay(11000).fadeIn(5000);
   $('#show-button').delay(3000).fadeIn(3000).on('click', function() {
     $('.flexer').show("slow");
     $('.flexer2').show("slow");
   });
-
+  $('#local, #weird, #image, #apoca').on('mouseenter', function() {
+    idTag = $(this).attr('id');
+    beginInterval(idTag);
+  })
+  $('#local, #weird, #image, #apoca').on('mouseleave', function() {
+    intervalClear();
+  })
 
   $('#prof-pic').on('mouseenter', function() {
     if ($('#prof-pic').hasClass('classy')) {
@@ -75,3 +88,27 @@ $(document).ready(function() {
     });
   })
 })
+var imgSwap;
+function beginInterval(projectName) {
+ imgSwap = window.setInterval( function() {swapImg(projectName)}, 2000);
+}
+function intervalClear() {
+  window.clearInterval(imgSwap);
+}
+
+function swapImg(projectName) {
+  var imgStr = $('#' + projectName).attr('src')
+  var imgNum = imgStr.charAt(9);
+  var newNum = parseInt(imgNum) + 1
+  if (projectName === 'local' && newNum > 9) {
+    newNum = 1
+  } else if (projectName === 'image' && newNum > 6 ) {
+    newNum = 1
+  } else if (projectName === 'weird' && newNum > 6 ) {
+    newNum = 1
+  } else if (projectName === 'apoca' && newNum > 7 ) {
+    newNum = 1
+  }
+  var path = "img/" + projectName + newNum.toString() + ".png"
+  $('#' + projectName).attr('src', path);
+}
