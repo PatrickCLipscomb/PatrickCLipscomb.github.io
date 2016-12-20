@@ -9,7 +9,7 @@ $(document).ready(function() {
   $('.flexer').hide();
   $('.flexer2').hide();
   $('#text-type').typeIt({
-    strings: 'Patrick Lipscomb Full Stack Web Developer',
+    strings: 'Patrick Lipscomb Web Developer',
     speed: 110,
     autoStart: true
   });

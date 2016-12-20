@@ -9,7 +9,6 @@ body, html {
 
 }
 
-
 #text-type {
   color: black;
   font-family: monospace;
@@ -53,6 +52,37 @@ body, html {
   background-image: url("../img/pat-social1.jpg");
   max-width: 100%;
   background-repeat: no-repeat;
+}
+
+.flexnation {
+  display: flex;
+}
+.flexicle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+.flexicles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture {
+  width: 20em;
+  height: 20em;
+  background: black;
+  border-radius: 7%;
+  border: 7px solid black;
+  background-color: #597487;
+  background: url("../img/prof-pic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 1.3s ease-in-out;
+  transition: transform 1.3s ease-in-out;
 }
 
 .img-two {
@@ -220,6 +250,7 @@ div {
 .flex-last {
 }
 .flex-first {
+  margin-left: 4%;
 }
 .description {
   display: none;
