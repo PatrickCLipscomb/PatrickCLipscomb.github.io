@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
     <link href="css/stylesheets.css" rel="stylesheet" type="text/css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,70 +12,54 @@
   </head>
   <body>
     <div class="front-page parallax">
-<pre id="pre-header" class="pre-parallax">
-Patrick Lipscomb - Rails Developer
-
-          Project Page
-</pre>
+    <div id="pre-header" class="pre-parallax">
+      <h2 id="text-type"></h2>
     </div>
+    <h2 id="show-button">Show Work</h2>
 
+    </div>
+    <div class="flexer">
+      <div id="1" class="flexy">
+        <a href="https://localswap-by-patrick-lipscomb.herokuapp.com/categories"><img class="flex-image flex-first" src="img/local1.png" alt="" /></a>
+      </div>
+      <div class="flexy description">
+        <span id="flex-descrip1" class="">
+          Local Swap Solo Project
+        </span>
+      </div>
+      <div id="2" class="flexy flex-last">
+        <a href="https://localswap-by-patrick-lipscomb.herokuapp.com/categories">
+        <img class="flex-image" src="img/weird1.png" alt="" /></a>
+      </div>
+      <div class="flexy description">
+        <span id="flex-descrip2" class="">
+          Weird Map Solo Project
+        </span>
+      </div>
+    </div>
+    <div class="flexer2">
+      <div id="3" class="flexy">
+        <span id="flex-descrip3" class="description">
+          Image Manager Pair Project
+        </span>
+        <img class="flex-image flex-first" src="img/image1.png" alt="" />
+      </div>
+      <div id="4" class="flexy flex-last">
+        <span id="flex-descrip4" class="description">
+          Apocalypse App Group Project
+        </span>
+        <img class="flex-image" src="img/apocal1.png" alt="" />
+      </div>
+    </div>
     <div id="navigation" class="fly-down">
-      <a href="#about" class="nav-text"><h4>About</h4></a>
-      <a href="#project" class="nav-text"><h4>Projects</h4></a>
-      <a href="#contact" class="nav-text"><h4>Contact</h4></a>
-      <a href="index.html" id="top" >&uarr;Top</a>
+      <a href="about.html" class="nav-text"><h4>About</h4></a>
+      <a href="index.html" class="nav-text"><h4>Projects</h4></a>
     </div>
+    <span id="nav-click" class="glyphicon glyphicon-menu-hamburger"></span>
 
-    <!-- <div class="parallax img-one" style="height:60%;"> -->
 
-    </div>
-
-    <div class="text">
-      <div class="row">
-        <div class="col-md-6">
-          <a name="about"></a>
-          <h1 class="prof-text">About <img id="prof-pic" class="classy" /></h1>
-        </div>
-        <div class="col-md-6">
-          <h2 style="text-align:center;margin-top:15%">I am a Rails developer living in Portland, searching for a creative and exciting work environment.</h2>
-          <span class="about-icons">
-            <a href="https://www.linkedin.com/in/patrick-lipscomb"><img src="img/linkedin.png" class="contact-icon-about"></a>
-            <a href="https://github.com/PatrickCLipscomb"><img src="img/github.png" class="contact-icon-about"></a>
-          </span>
-        </div>
-      </div>
-      <hr>
-      <h2 style="text-align: center;">Core Competincies: Ruby on Rails, ReactJS, Ember.js, Sinatra, Angular2, JavaScript, HTML, CSS, Sass, Bootstrap, jQuery, ECMA2015, PostgreSQL, MySQL, RSpec, Capybara, PhantomJS, Git, Heroku, Amazon Web Services</h2>
-      <div class="card-holder">
-        <div class="logo-card">
-          <a href="https://facebook.github.io/react/">
-          <img src="img/React-JS.png" alt="" />
-        </a>
-        </div>
-        <div class="logo-card2">
-          <a href="http://www.sinatrarb.com/">
-          <img src="img/singing-with-sinatra.jpg" alt="" />
-        </a>
-        </div>
-        <div class="logo-card2">
-          <a href="http://rubyonrails.org/">
-          <img src="img/Ruby_on_Rails.png" alt="" />
-        </a>
-        </div>
-        <div class="logo-card">
-          <a href="http://emberjs.com/">
-          <img src="img/Ember.js_Logo_and_Mascot.png" alt="" />
-        </a>
-        </div>
-        <div class="logo-card2">
-          <a href="https://angular.io/">
-          <img src="img/ng2-logo.png" alt="" />
-        </a>
-        </div>
-      </div>
-    </div>
     <!-- <div class="parallax img-two" style="height:60%;"></div> -->
-    <div class="text">
+    <div class="text intro">
         <a name="project"></a>
         <h1 style="text-align:left;">Projects </h1>
         <span class="text-muted">Check out the live sites, and click images to see enlarged image.</span>
@@ -373,10 +359,10 @@ Patrick Lipscomb - Rails Developer
 
     </div>
 
-    <div class="parallax img-three" style="height:100%;"></div>
+    <div class="img-three intro parallax " style="height:100%;"></div>
 
     <a name="contact"></a>
-      <div class="text" style="text-align: center;">
+      <div class="intro text" style="text-align: center;">
         <h1>Contact</h1>
         <p>tel: (949) 433-1072</p>
         <p>email: <a href="mailto:patrick74lipscomb@gmail.com" class="app-links">patrick74lipscomb@gmail.com</a></p>
