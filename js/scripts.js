@@ -8,6 +8,8 @@ $(document).ready(function() {
   };
   $('.flexer').hide();
   $('.flexer2').hide();
+  $('.footer').hide();
+  $('.img-three').hide();
   $('#text-type').typeIt({
     strings: 'Patrick Lipscomb Web Developer',
     speed: 110,

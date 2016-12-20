@@ -37,7 +37,27 @@ body, html {
   cursor: pointer;
   opacity: .8;
 }
-
+.contact {
+  width: 2.5%;
+  top: 90%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.icon1 {
+  left: 85%;
+}
+.icon2 {
+  left: 89%;
+}
+.icon3 {
+  left: 93%;
+}
+.contact-icon {
+  width: 2.5%
+}
+.footer {
+  background: white;
+}
 .intro {
   display: none;
 }
@@ -106,6 +126,10 @@ body, html {
   background-size: cover;
 }
 
+.front-page {
+  height: 100%
+}
+
 .mini-pic {
   max-width: 30px;
 }
@@ -161,7 +185,7 @@ div {
   position: fixed;
   top: 30px;
   right: 1%;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 1px 1px 1px #888888;
   background-color: #b9e5bf;
   padding: 20px;
   padding-left: 23px;
@@ -355,9 +379,7 @@ i {
   max-width: 100%;
 }
 
-.contact-icon {
-  width: 2.5%;
-}
+
 
 
 
