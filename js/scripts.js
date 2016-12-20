@@ -1,15 +1,5 @@
 $(document).ready(function() {
-  var isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
-  if (isiOS){
-    $('div').removeClass('parallax').addClass('control');
-    $('img').addClass('mini-pic');
-    $('pre').removeClass('pre-parallax');
-    $('#work-his').removeClass('mini-pic');
-  };
-  $('.flexer').hide();
-  $('.flexer2').hide();
-  $('.footer').hide();
-  $('.img-three').hide();
+  $('.flexer, .flexer2, .flexer2, .footer, .img-three').hide();
   $('#text-type').typeIt({
     strings: 'Patrick Lipscomb Web Developer',
     speed: 110,
@@ -23,8 +13,12 @@ $(document).ready(function() {
   $('#fader').delay(4000).fadeIn(3000);
   $('.fading').delay(11000).fadeIn(5000);
   $('#show-button').delay(3000).fadeIn(3000).on('click', function() {
-    $('.flexer').show("slow");
-    $('.flexer2').show("slow");
+    $('.headIcon').fadeOut(2000);
+    $.when($('.flexer, .flexer2, .footer-icons').show("slow")).done(function() {
+      $('html,body').animate({
+        scrollTop: $(".flexer").offset().top
+      }, 'slow');
+    });
   });
   $('#local, #weird, #image, #apoca').on('mouseenter', function() {
     idTag = $(this).attr('id');
@@ -33,17 +27,6 @@ $(document).ready(function() {
   $('#local, #weird, #image, #apoca').on('mouseleave', function() {
     intervalClear();
   })
-
-  $('#prof-pic').on('mouseenter', function() {
-    if ($('#prof-pic').hasClass('classy')) {
-      $('#prof-pic').removeClass('classy')
-      $('#prof-pic').addClass('goofy')
-    } else {
-      $('#prof-pic').removeClass('goofy')
-      $('#prof-pic').addClass('classy')
-    }
-  })
-  var lastScrollTop = 0;
   $('#nav-click').on('click', function(e) {
     $('#nav-click').hide("slow");
     $('#navigation').show("slow")
@@ -55,37 +38,6 @@ $(document).ready(function() {
   });
   $('#navigation').on('click', function(e) {
     e.stopPropagation();
-  })
-
-  // $(window).scroll(function(event) {
-  //    var scroll = $(this).scrollTop();
-  //    if (scroll > lastScrollTop){
-  //      if ($('#navigation').hasClass('fly-up')) {
-  //        $('#navigation').removeClass('fly-up')
-  //        $('#navigation').addClass('fly-down')
-  //      }
-  //    } else {
-  //      if ($('#navigation').hasClass('fly-down')) {
-  //        $('#navigation').removeClass('fly-down')
-  //        $('#navigation').addClass('fly-up')
-  //      }
-  //    }
-  //    lastScrollTop = scroll;
-  // });
-  $('.screen-shots').each(function() {
-    var idName = $(this).attr('id').toString()
-    var id = idName.charAt(idName.length - 1)
-    var name = idName.slice(0, -2)
-    $('#' + idName).on("click", function() {
-      $('#' + name + '-display').html('<br><button id="close-' + name +'" class="pull-right btn btn-danger glyphicon glyphicon-remove"></button><img src="img/' + name + id + '.png" class="display-shot" /><br>')
-      $('#close-' + name).on('click', function() {
-        if (name === 'local') {
-          $('#' + name + '-display').html('');
-        } else {
-          $('#' + name + '-display').html('<hr>');
-        }
-      })
-    });
   })
 })
 var imgSwap;
@@ -102,7 +54,7 @@ function swapImg(projectName) {
   var newNum = parseInt(imgNum) + 1
   if (projectName === 'local' && newNum > 9) {
     newNum = 1
-  } else if (projectName === 'image' && newNum > 6 ) {
+  } else if (projectName === 'image' && newNum > 7 ) {
     newNum = 1
   } else if (projectName === 'weird' && newNum > 6 ) {
     newNum = 1

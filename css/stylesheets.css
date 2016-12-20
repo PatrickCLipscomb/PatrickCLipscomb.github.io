@@ -41,6 +41,17 @@ body, html {
   transform: translateX(-50%);
   position: absolute;
 }
+.footer-contacts {
+  width: 2.5%;
+  transform: translateX(-50%);
+  position: absolute;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer-icons {
+  display: none;
+  height: 10%;
+}
 .icon1 {
   left: 85%;
 }
@@ -63,12 +74,6 @@ body, html {
 .pre-parallax {
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img-one {
-  background-image: url("../img/pat-social1.jpg");
-  max-width: 100%;
   background-repeat: no-repeat;
 }
 
@@ -116,41 +121,12 @@ body, html {
   display: none;
 }
 
-
-.img-two {
-  background-image: url("../img/pat-tennis1.jpg");
-  max-width: 100%;
-  background-repeat: no-repeat;
-}
-
-.img-three {
-  background-image: url("../img/forest.jpeg");
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: -20px;
-
-}
-
-.parallax {
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
 .front-page {
   height: 100%
 }
 
 .mini-pic {
   max-width: 30px;
-}
-
-
-.proj-sub-head {
-  padding-right: 10px;
-  font-size: .8em;
-  opacity: .7;
 }
 
 h1 {
@@ -178,16 +154,6 @@ p {
 }
 
 div {
-}
-
-.general-work {
-  background-image: url("../img/portland.jpg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
 }
 
 #navigation {
@@ -222,41 +188,6 @@ div {
   color: white;
 }
 
-.display-shot {
-  max-width: 90%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid black;
-  border-radius: 10px;
-}
-
-.logo-card {
-  padding: 15px;
-}
-.logo-card2 {
-  padding: 30px;
-}
-.logo-card:hover {
-  background-color: orange;
-}
-.logo-card2:hover {
-  background-color: orange;
-}
-.logo-card img {
-  max-width: 180px;
-}
-.logo-card2 img {
-  max-width: 180px;
-}
-
-.card-holder {
-  display: flex;
-  padding-top: 30px;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -282,17 +213,12 @@ div {
   transition: 2s ease;
   cursor: pointer;
 }
-.flex-last {
-}
-.flex-first {
-}
 .description {
   display: none;
   z-index: 1;
   background-color: #597487;
   margin-left: 200px;
 }
-
 
 .flex-item {
   display: flex;
@@ -307,90 +233,6 @@ div {
   max-width: 200px;
   margin-left: 50px;
 }
-
-.classy {
-  border: 10px solid black;
-  border-radius: 10px;
-  content: url("../img/prof-pic.jpg");
-}
-
-.goofy {
-  padding: 10px;
-  background-color: orange;
-  content: url("../img/IMG_0281.JPG");
-}
-.prof-text {
-  padding-left: 30px;
-  text-align: left;
-}
-
-
-.text {
-  padding: 1% 15% 3% 15%;
-  line-height: 1;
-}
-
-.text {
-  padding: 1% 5% 3% 5%;
-  line-height: 1.5;
-  font-size: 1.2em;
-}
-
-.screen-shots {
-  max-width: 90%;
-}
-
-.screen-shots:hover {
-  cursor: pointer;
-}
-
-.item {
-  min-height: 374px;
-}
-
-#work-his {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.7;
-}
-
-hr {
-  margin: 5% 0 5% 0;
-}
-
-i {
-  font-size: 5vw;
-}
-
-.project-images {
-  border: 1px solid grey;
-  max-width: 19%;
-}
-
-.project-images:hover, .current-image:hover {
-  cursor: pointer;
-}
-
-.app-links {
-  color: blue;
-}
-
-.projects-text {
-  max-height: 372px;
-  overflow: scroll;
-  background-image: url("../img/vintage-background.jpg");
-  background-position: center;
-}
-.projects-images {
-}
-
-#photo-display img {
-  max-width: 100%;
-}
-
-
-
 
 
 .contact-icon-about {
