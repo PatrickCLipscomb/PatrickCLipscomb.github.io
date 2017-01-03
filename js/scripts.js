@@ -20,11 +20,16 @@ $(document).ready(function() {
       }, 'slow');
     });
   });
-  $('#local, #weird, #image, #apoca').on('mouseenter', function() {
-    idTag = $(this).attr('id');
+  $('#localD, #weirdD, #imageD, #apocaD').on('mouseenter', function() {
+    var idTag = $(this).attr('id');
+    idTag = idTag.slice(0, -1);
+    $('#label-for-' + idTag).show();
     beginInterval(idTag);
   })
-  $('#local, #weird, #image, #apoca').on('mouseleave', function() {
+  $('#localD, #weirdD, #imageD, #apocaD').on('mouseleave', function() {
+    var idTag = $(this).attr('id');
+    idTag = idTag.slice(0, -1);
+    $('#label-for-' + idTag).hide();
     intervalClear();
   })
   $('#nav-click').on('click', function(e) {
@@ -42,7 +47,7 @@ $(document).ready(function() {
 })
 var imgSwap;
 function beginInterval(projectName) {
- imgSwap = window.setInterval( function() {swapImg(projectName)}, 1500);
+ imgSwap = window.setInterval( function() {swapImg(projectName)}, 1000);
 }
 function intervalClear() {
   window.clearInterval(imgSwap);
@@ -58,7 +63,7 @@ function swapImg(projectName) {
     newNum = 1
   } else if (projectName === 'weird' && newNum > 6 ) {
     newNum = 1
-  } else if (projectName === 'apoca' && newNum > 7 ) {
+  } else if (projectName === 'apoca' && newNum > 6 ) {
     newNum = 1
   }
   var path = "img/" + projectName + newNum.toString() + ".png"

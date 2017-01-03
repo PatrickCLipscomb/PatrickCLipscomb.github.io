@@ -223,9 +223,7 @@ div {
   border-radius: 7px;
   color: white
 }
-.label-link {
-  z-index: 1;
-}
+
 
 .flex-item {
   display: flex;
@@ -249,17 +247,4 @@ div {
 
 .about-icons {
   margin-left: 33%;
-}
-
-.label-link:hover {
-   text-decoration: none;
-   border: black solid 2px;
-   border-radius: 7px;
-}
-
-#apocaD {
-  border-left: black solid 2px;
-}
-#weirdD {
-  border-left: black solid 2px;
 }
