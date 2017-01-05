@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('.flexer, .flexer2, .flexer2, .footer, .img-three').hide();
   $('#text-type').typeIt({
-    strings: 'Patrick Lipscomb Web Developer',
+    strings: 'Pat Lipscomb Web Developer',
     speed: 110,
     autoStart: true
   });
