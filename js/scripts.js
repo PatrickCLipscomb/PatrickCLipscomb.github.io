@@ -11,7 +11,7 @@ $(document).ready(function() {
     autoStart: true
   });
   $('#fader').delay(4000).fadeIn(3000);
-  $('.fading').delay(11000).fadeIn(5000);
+  $('.fading').delay(7000).fadeIn(3000);
   $('#show-button').delay(3000).fadeIn(3000).on('click', function() {
     $('.headIcon').fadeOut(2000);
     $.when($('.flexer, .flexer2, .footer-icons').show("slow")).done(function() {
