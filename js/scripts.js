@@ -43,18 +43,18 @@ $(document).ready(function() {
   });
   $('#navigation').on('click', function(e) {
     e.stopPropagation();
-  })
-})
+  });
+});
 var imgSwap;
 function beginInterval(projectName) {
- imgSwap = window.setInterval( function() {swapImg(projectName)}, 1000);
+ imgSwap = window.setInterval( function() {swapImg(projectName)}, 2000);
 }
 function intervalClear() {
   window.clearInterval(imgSwap);
-}
+};
 
 function swapImg(projectName) {
-  var imgStr = $('#' + projectName).attr('src')
+  var imgStr = $('#' + projectName).attr('src');
   var imgNum = imgStr.charAt(9);
   var newNum = parseInt(imgNum) + 1
   if (projectName === 'local' && newNum > 9) {
@@ -68,4 +68,4 @@ function swapImg(projectName) {
   }
   var path = "img/" + projectName + newNum.toString() + ".png"
   $('#' + projectName).attr('src', path);
-}
+};
