@@ -13,7 +13,7 @@ body, html {
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 3vw;
+  font-size: 30px;
   font-weight: bolder;
   opacity: .8;
   text-align: center;
@@ -30,18 +30,45 @@ body, html {
   padding: 10px;
   display: none;
 }
+@media (max-width: 600px) {
+  #show-button {
+    top: 65%;
+  }
+  .flexer, .flexer2 {
+    flex-direction: column;
+  }
+  #multi-label {
+    font-size: 16px;
+    width: 70%;
+  }
+  #web-build-title {
+    font-size: 16px;
+  }
+  .icon1 {
+    left: 33%;
+  }
+  .icon2 {
+    left: 44%;
+  }
+  .icon3 {
+    left: 55%;
+  }
+  .about-text {
+    margin-top: 150% !important;
+  }
+}
 #show-button:hover {
   cursor: pointer;
   opacity: .8;
 }
 .contact {
-  width: 2.5%;
+  width: 30px;
   top: 90%;
   transform: translateX(-50%);
   position: absolute;
 }
 .footer-contacts {
-  width: 2.5%;
+  width: 40px;
   transform: translateX(-50%);
   position: absolute;
   margin-top: 2%;
@@ -52,10 +79,10 @@ body, html {
   height: 10%;
 }
 .icon1 {
-  left: 85%;
+  left: 75%;
 }
 .icon2 {
-  left: 89%;
+  left: 84%;
 }
 .icon3 {
   left: 93%;
@@ -111,6 +138,7 @@ body, html {
   text-align: center;
   font-family: monospace;
   font-weight: bold;
+  margin-top: 15%;
 }
 
 #fader {
@@ -273,16 +301,28 @@ div {
   margin-right: 9000;
 }
 #multi-label {
-  position: absolute;
+  visibility: hidden;
+  position: relative;
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 37%;
-  top: 1181px;
-  z-index: 100;
+  top: 0;
+  /*width: 37%;*/
+  /*top: 1181px;*/
+  /*z-index: 100;*/
   background-color: black;
   color: white;
   padding: 7px 11px 7px 11px;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
+}
+#web-build-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#web-build-title span {
+  background-color: black;
+  color: white;
+  padding: 7px 11px 7px 11px;
+  border-radius: 8px;
 }

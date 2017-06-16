@@ -6,8 +6,8 @@ $(document).ready(function() {
     autoStart: true
   });
   $('#type-text2').typeIt({
-    strings: 'searching for a challenging and fast-paced work environment.',
-    speed: 70,
+    strings: 'with a good eye for design and the ability to communicate and work through probelms quickly.',
+    speed: 50,
     autoStart: true
   });
   $('#multi-label').typeIt({
@@ -101,7 +101,7 @@ function findProjectName(name) {
   }
 }
 function typeProjectName(name) {
-  $('#multi-label').typeIt({
+  $('#multi-label').css('visibility', 'visible').typeIt({
     strings: name,
     speed: 30,
     autoStart: true
