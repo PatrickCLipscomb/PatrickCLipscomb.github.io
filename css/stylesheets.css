@@ -135,6 +135,7 @@ h1 {
 }
 
 h2 {
+  font-family: monospace;
   margin-top: 5%;
   margin-bottom: 0;
 }
@@ -260,4 +261,28 @@ div {
 }
 #weirdD {
   border-left: black solid 2px;
+}
+#web-build-title, #personal-projects-title {
+  display: none;
+}
+
+#crowD {
+  margin-left: 9000;
+}
+#kimberlingD {
+  margin-right: 9000;
+}
+#multi-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 37%;
+  top: 1181px;
+  z-index: 100;
+  background-color: black;
+  color: white;
+  padding: 7px 11px 7px 11px;
+  border-radius: 8px;
+  text-align: left;
 }

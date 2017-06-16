@@ -10,6 +10,11 @@ $(document).ready(function() {
     speed: 70,
     autoStart: true
   });
+  $('#multi-label').typeIt({
+    strings: '',
+    speed: 1,
+    autoStart: true
+  });
   $('#fader').delay(4000).fadeIn(3000);
   $('.fading').delay(7000).fadeIn(3000);
   $('#show-button').delay(3000).fadeIn(3000).on('click', function() {
@@ -19,12 +24,17 @@ $(document).ready(function() {
         scrollTop: $(".flexer").offset().top
       }, 'slow');
     });
+    $('#web-build-title').show("slow");
+    $('#personal-projects-title').show("slow");
+    console.log('showing')
   });
   $('#localD, #weirdD, #imageD, #apocaD').on('mouseenter', function() {
     var idTag = $(this).attr('id');
     idTag = idTag.slice(0, -1);
     $('#label-for-' + idTag).show();
+    findProjectName(idTag);
     beginInterval(idTag);
+
   })
   $('#localD, #weirdD, #imageD, #apocaD').on('mouseleave', function() {
     var idTag = $(this).attr('id');
@@ -69,3 +79,31 @@ function swapImg(projectName) {
   var path = "img/" + projectName + newNum.toString() + ".png"
   $('#' + projectName).attr('src', path);
 };
+
+function findProjectName(name) {
+  switch (name) {
+    case 'local':
+      typeProjectName('Local Swap Solo Project');
+      $('#multi-label').css('width', '37%');
+      break;
+    case 'image':
+      typeProjectName('Image Manager Solo Project');
+      $('#multi-label').css('width', '45%');
+      break;
+    case 'weird':
+      typeProjectName('Weird Map Solo Project');
+      $('#multi-label').css('width', '37%');
+      break;
+    case 'apoca':
+      typeProjectName('Apocalypse App Solo Project');
+      $('#multi-label').css('width', '45%');
+      break;
+  }
+}
+function typeProjectName(name) {
+  $('#multi-label').typeIt({
+    strings: name,
+    speed: 30,
+    autoStart: true
+  });
+}
