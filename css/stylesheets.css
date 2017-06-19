@@ -53,9 +53,10 @@ body, html {
   .icon3 {
     left: 55%;
   }
-  .about-text {
-    margin-top: 150% !important;
-  }
+
+}
+.first {
+  margin-top: 15%;
 }
 #show-button:hover {
   cursor: pointer;
@@ -106,15 +107,26 @@ body, html {
 .flexnation {
   background-size: cover;
   height: 100%;
+  display: flex;
+}
+@media (max-width: 700px) {
+  .flexnation {
+    flex-direction: column;
+  }
+  .flexicle {
+    width: 100%;
+  }
+  .flexicles {
+    width: 90% !important;
+    margin: 0 auto;
+  }
 }
 .flexicle {
-  float: left;
   width: 40%;
 }
 .flexicles {
-  float: left;
-  width: 55%;
-  align-items: center;
+  width: 60%;
+  text-align: center;
 }
 
 .picture {
@@ -138,7 +150,7 @@ body, html {
   text-align: center;
   font-family: monospace;
   font-weight: bold;
-  margin-top: 15%;
+  font-size: 20px;
 }
 
 #fader {
