@@ -45,13 +45,13 @@ body, html {
     font-size: 16px;
   }
   .icon1 {
-    left: 33%;
+    left: 33% !important;
   }
   .icon2 {
-    left: 44%;
+    left: 44% !important;
   }
   .icon3 {
-    left: 55%;
+    left: 55% !important;
   }
 
 }
@@ -217,7 +217,7 @@ div {
   right: 1%;
   z-index: 1;
   color: black;
-  font-size: 2vw;
+  font-size: 30px;
 }
 #nav-click:hover {
   cursor: pointer;
