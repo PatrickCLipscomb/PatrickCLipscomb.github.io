@@ -53,6 +53,9 @@ body, html {
   .icon3 {
     left: 55% !important;
   }
+  .contact {
+    width: 30px !important;
+  }
 
 }
 .first {
@@ -63,30 +66,35 @@ body, html {
   opacity: .8;
 }
 .contact {
-  width: 30px;
+  width: 50px;
   top: 90%;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
   position: absolute;
+  transition: all .5s;
 }
 .footer-contacts {
   width: 40px;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
   position: absolute;
   margin-top: 2%;
   margin-bottom: 2%;
+  transition: all .5s ease;
+}
+.contact:hover, .footer-contacts:hover, .contact-icon-about:hover {
+  transform: scale(1.2);
 }
 .footer-icons {
   display: none;
   height: 10%;
 }
 .icon1 {
-  left: 75%;
+  right: 40px;
 }
 .icon2 {
-  left: 84%;
+  right: 130px;
 }
 .icon3 {
-  left: 93%;
+  right: 220px;
 }
 .contact-icon {
   width: 2.5%
@@ -214,7 +222,7 @@ div {
 #nav-click {
   position: fixed;
   top: 30px;
-  right: 1%;
+  right: 2%;
   z-index: 1;
   color: black;
   font-size: 30px;
@@ -281,13 +289,17 @@ div {
 }
 
 .contact-icon-about {
-  width: 15%;
+  width: 40%;
   margin-top: 5%;
   display: inline;
+  transition: all .5s ease;
 }
 
 .about-icons {
-  margin-left: 33%;
+  display: flex;
+margin: 0 auto;
+justify-content: center;
+margin-bottom: 50px;
 }
 
 .label-link:hover {

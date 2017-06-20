@@ -34,14 +34,16 @@ $(document).ready(function() {
     $('#label-for-' + idTag).show();
     findProjectName(idTag);
     beginInterval(idTag);
-
-  })
+  });
   $('#localD, #weirdD, #imageD, #apocaD').on('mouseleave', function() {
     var idTag = $(this).attr('id');
     idTag = idTag.slice(0, -1);
     $('#label-for-' + idTag).hide();
     intervalClear();
-  })
+  });
+  $('#crowD, #kimberlingD').on('mouseenter', function() {
+    findProjectName($(this).attr('id').slice(0, -1));
+  });
   $('#nav-click').on('click', function(e) {
     $('#nav-click').hide("slow");
     $('#navigation').show("slow")
@@ -83,25 +85,32 @@ function swapImg(projectName) {
 function findProjectName(name) {
   switch (name) {
     case 'local':
-      typeProjectName('Local Swap Solo Project');
+      typeProjectName('Local Swap Solo Project', '#multi-label');
       $('#multi-label').css('width', '37%');
       break;
     case 'image':
-      typeProjectName('Image Manager Solo Project');
+      typeProjectName('Image Manager Solo Project', '#multi-label');
       $('#multi-label').css('width', '45%');
       break;
     case 'weird':
-      typeProjectName('Weird Map Solo Project');
+      typeProjectName('Weird Map Solo Project', '#multi-label');
       $('#multi-label').css('width', '37%');
       break;
     case 'apoca':
-      typeProjectName('Apocalypse App Solo Project');
+      typeProjectName('Apocalypse App Solo Project', '#multi-label');
       $('#multi-label').css('width', '45%');
+      break;
+    case 'crow':
+      typeProjectName('Crow Hill Website Build', '#web-build-title span');
+      break;
+    case 'kimberling':
+      typeProjectName('Kimberling Vet Website Build', '#web-build-title span');
       break;
   }
 }
-function typeProjectName(name) {
-  $('#multi-label').css('visibility', 'visible').typeIt({
+function typeProjectName(name, target) {
+  if (target === '#web-build-title span') $('#web-build-title span').text('');
+  $(target).css('visibility', 'visible').typeIt({
     strings: name,
     speed: 30,
     autoStart: true
