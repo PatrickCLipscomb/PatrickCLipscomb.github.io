@@ -24,7 +24,7 @@ $(document).ready(function() {
         scrollTop: $(".flexer").offset().top
       }, 'slow');
     });
-    $('#web-build-title').show("slow");
+    $('#web-build-title, #web-build-title-2').show("slow");
     $('#personal-projects-title').show("slow");
     console.log('showing')
   });
@@ -41,7 +41,7 @@ $(document).ready(function() {
     $('#label-for-' + idTag).hide();
     intervalClear();
   });
-  $('#crowD, #kimberlingD').on('mouseenter', function() {
+  $('#crowD, #kimberlingD, #irvingD, #bothellD').on('mouseenter', function() {
     findProjectName($(this).attr('id').slice(0, -1));
   });
   $('#nav-click').on('click', function(e) {
@@ -106,10 +106,17 @@ function findProjectName(name) {
     case 'kimberling':
       typeProjectName('Kimberling Vet Website Build', '#web-build-title span');
       break;
+    case 'irving':
+      typeProjectName('Irving Pet Hospital Website Build', '#web-build-title-2 span');
+      break;
+    case 'bothell':
+      typeProjectName('Bothell Pet Hospital Website Build', '#web-build-title-2 span');
+      break;
   }
 }
 function typeProjectName(name, target) {
   if (target === '#web-build-title span') $('#web-build-title span').text('');
+  if (target === '#web-build-title-2 span') $('#web-build-title span').text('');
   $(target).css('visibility', 'visible').typeIt({
     strings: name,
     speed: 30,

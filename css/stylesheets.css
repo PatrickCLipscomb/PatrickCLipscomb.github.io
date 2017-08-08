@@ -41,7 +41,7 @@ body, html {
     font-size: 16px;
     width: 70%;
   }
-  #web-build-title {
+  #web-build-title, #web-build-title-2 {
     font-size: 16px;
   }
   .icon1 {
@@ -314,7 +314,7 @@ margin-bottom: 50px;
 #weirdD {
   border-left: black solid 2px;
 }
-#web-build-title, #personal-projects-title {
+#web-build-title, #personal-projects-title, #web-build-title-2 {
   display: none;
 }
 
@@ -340,11 +340,11 @@ margin-bottom: 50px;
   border-radius: 8px;
   text-align: center;
 }
-#web-build-title {
+#web-build-title, #web-build-title-2 {
   text-align: center;
   margin-bottom: 50px;
 }
-#web-build-title span {
+#web-build-title span, #web-build-title-2 span {
   background-color: black;
   color: white;
   padding: 7px 11px 7px 11px;
